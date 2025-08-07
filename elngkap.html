@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo Elemen HTML5 Lengkap</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 8px;
+      }
+      audio,
+      video {
+        display: block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Demo Semua Elemen HTML5</h1>
+      <nav>
+        <a href="#form">Form</a> | <a href="#multimedia">Multimedia</a> |
+        <a href="#table">Tabel</a> | <a href="#list">List</a> |
+        <a href="#semantics">Semantic</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="form">
+        <h2>Formulir</h2>
+        <form action="#" method="post">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="umur">Umur:</label>
+          <input
+            type="number"
+            id="umur"
+            name="umur"
+            min="0"
+            max="120"
+          /><br /><br />
+
+          <label for="tgl">Tanggal:</label>
+          <input type="date" id="tgl" name="tgl" /><br /><br />
+
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="L" checked /> Laki-laki
+          <input type="radio" name="gender" value="P" /> Perempuan<br /><br />
+
+          <label>Hobi:</label>
+          <input type="checkbox" name="hobi" value="membaca" /> Membaca
+          <input type="checkbox" name="hobi" value="olahraga" />
+          Olahraga<br /><br />
+
+          <label for="pesan">Pesan:</label><br />
+          <textarea id="pesan" name="pesan" rows="4" cols="40"></textarea
+          ><br /><br />
+
+          <input type="submit" value="Kirim" />
+          <input type="reset" value="Reset" />
+        </form>
+      </section>
+
+      <section id="multimedia">
+        <h2>Multimedia</h2>
+        <h3>Gambar</h3>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Contoh gambar"
+          width="150"
+        />
+
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+          <source src="audio.ogg" type="audio/ogg" />
+          Browser tidak mendukung audio.
+        </audio>
+
+        <h3>Video</h3>
+        <video width="320" height="240" controls>
+          <source src="video.mp4" type="video/mp4" />
+          <source src="video.ogg" type="video/ogg" />
+          Browser tidak mendukung video.
+        </video>
+      </section>
+
+      <section id="table">
+        <h2>Tabel</h2>
+        <table>
+          <caption>
+            Data Contoh
+          </caption>
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Umur</th>
+              <th>Kota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Budi</td>
+              <td>25</td>
+              <td>Jakarta</td>
+            </tr>
+            <tr>
+              <td>Siti</td>
+              <td>22</td>
+              <td>Bandung</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="list">
+        <h2>List</h2>
+        <h3>Ordered List</h3>
+        <ol type="1">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+          <li>Satu</li>
+          <li>Dua</li>
+          <li>Tiga</li>
+        </ul>
+
+        <h3>Definition List</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets</dd>
+        </dl>
+      </section>
+
+      <section id="semantics">
+        <h2>Elemen Semantik HTML5</h2>
+        <article>
+          <h3>Artikel Contoh</h3>
+          <p>
+            Ini adalah bagian dari konten artikel yang menggunakan tag
+            &lt;article&gt;.
+          </p>
+        </article>
+
+        <aside>
+          <h3>Aside</h3>
+          <p>Ini adalah informasi tambahan di samping artikel.</p>
+        </aside>
+
+        <figure>
+          <img src="https://via.placeholder.com/100" alt="Gambar ilustrasi" />
+          <figcaption>Gambar Placeholder</figcaption>
+        </figure>
+
+        <details>
+          <summary>Klik untuk melihat detail</summary>
+          <p>Ini adalah konten tersembunyi yang bisa dibuka.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dibuat oleh Kamu. Semua Hak Dilindungi.</p>
+    </footer>
+  </body>
+</html>
